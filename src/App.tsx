@@ -109,19 +109,19 @@ const PomodoroTimer = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen font-sans bg-[url(/c.gif)] bg-no-repeat bg-center bg-cover">
-      <div className="rounded-lg bg-gray-800 p-10 bg-opacity-50 w-[80%] max-w-[600px] flex flex-col items-center justify-center">
-        <h1 className="text-5xl font-bold mb-4 text-white">Pomodoro Timer</h1>
-        <div className="mt-4 space-x-4">
+    <div className="flex flex-col items-center justify-center min-h-screen font-sans bg-[url(/c.gif)] bg-no-repeat bg-center bg-cover">
+      <div className="rounded-lg bg-gray-800 p-10 bg-opacity-50 w-full max-w-md md:max-w-xl lg:max-w-2xl flex flex-col items-center justify-center">
+        <h1 className="text-3xl md:text-5xl font-bold mb-4 text-white">Pomodoro Timer</h1>
+        <div className="mt-4 space-y-4 md:space-x-4 md:flex md:space-y-0">
           <button
             onClick={handleWorkButtonClick}
-            className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+            className="w-full md:w-auto px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
           >
             Work
           </button>
           <button
             onClick={handleBreakButtonClick}
-            className="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600"
+            className="w-full md:w-auto px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600"
           >
             Break
           </button>
@@ -151,24 +151,24 @@ const PomodoroTimer = () => {
             {formatTime(timeLeft)}
           </text>
         </svg>
-        <div className="mt-4 space-x-4">
+        <div className="mt-4 space-y-4 md:space-x-4 md:flex md:space-y-0">
           <button
             onClick={startTimer}
             disabled={isRunning || timerFinished}
-            className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+            className="w-full md:w-auto px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
           >
             Start
           </button>
           <button
             onClick={stopTimer}
             disabled={!isRunning || timerFinished}
-            className="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600"
+            className="w-full md:w-auto px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600"
           >
             Stop
           </button>
           <button
             onClick={resetTimer}
-            className="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600"
+            className="w-full md:w-auto px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600"
           >
             Reset
           </button>
@@ -189,20 +189,20 @@ const PomodoroTimer = () => {
         )}
         {/* View History buttons */}
         {isWorkSession && (
-          <div className="mt-8 space-x-4">
+          <div className="mt-8">
             <button
               onClick={openWorkHistory}
-              className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+              className="w-full px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
             >
               Work Session History
             </button>
           </div>
         )}
         {!isWorkSession && (
-          <div className="mt-8 space-x-4">
+          <div className="mt-8">
             <button
               onClick={openBreakHistory}
-              className="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600"
+              className="w-full px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600"
             >
               Break Session History
             </button>
