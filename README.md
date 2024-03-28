@@ -1,28 +1,45 @@
 # Pomodoro Timer
 
-This Pomodoro Timer application helps you manage your work and break sessions efficiently. Here's a brief overview of its functionalities:
+This Pomodoro Timer application helps you manage your work and break sessions efficiently. Here's a brief overview of its Deployment, Installation, Functionalities:
+
+## Deployed App 
+
+**Deployed Link**
+
+App Link: https://660526857282055d1109527b--vijaypomodorotimer.netlify.app/
+
+## Installation 
+
+Start the code
+
+```
+npm install
+```
+```
+npm run dev
+```
 
 ## Functionalities
 
 1. **Work and Break Session Management**: You can toggle between work and break sessions using the "Work" and "Break" buttons.
-   
-   ![Work and Break Session Management](work_break_session.png)
+   **Work**
+   ![Work Session](ss/work%20session.jpeg)
+   **Break**
+   ![Break Session](ss/break%20session.jpeg)
 
-2. **Timer Display**: Displays the countdown timer in a circular format, showing the time remaining in the current session.
+2. **Session Completion Tracking**: Displays the  number of completed work and break sessions.
    
-   ![Timer Display](timer_display.png)
+   **Work**
+   ![Work Completed](ss/work%20completed.jpeg)
+   **Break**
+   ![Break Completed](ss/break%20completed.jpeg)
 
-3. **Start, Stop, and Reset Timer**: Controls to start, stop, and reset the timer as needed.
+3. **Session History**: Allows users to view the start and end times of past work and break sessions.
    
-   ![Timer Controls](timer_controls.png)
-
-4. **Session Completion Tracking**: Keeps track of the number of completed work and break sessions.
-   
-   ![Session Completion Tracking](session_tracking.png)
-
-5. **Session History**: Allows users to view the start and end times of past work and break sessions.
-   
-   ![Session History](session_history.png)
+   **Work**
+   ![Session History](ss/work%20history.jpeg)
+   **Break**
+   ![Session History](ss/break%20history.jpeg)
 
 ## How to Use
 
