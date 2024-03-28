@@ -1,12 +1,6 @@
 # Pomodoro Timer
 
-This Pomodoro Timer application helps you manage your work and break sessions efficiently. Here's a brief overview of its Deployment, Installation, Functionalities:
-
-## Deployed App 
-
-**Deployed Link**
-
-App Link: https://660526857282055d1109527b--vijaypomodorotimer.netlify.app/
+This Pomodoro Timer application helps you manage your work and break sessions efficiently. Here's a brief overview of its Installation, Functionalities and Deployment:
 
 ## Installation 
 
@@ -41,6 +35,12 @@ npm run dev
    ![Session History](ss/work%20history.jpeg)
    **Break:**
    ![Session History](ss/break%20history.jpeg)
+   
+## Deployed App 
+
+**Deployed Link**
+
+App Link: https://vijaypomodorotimer.netlify.app
 
 ## How to Use
 
