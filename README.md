@@ -22,23 +22,24 @@ npm run dev
 ## Functionalities
 
 1. **Work and Break Session Management**: You can toggle between work and break sessions using the "Work" and "Break" buttons.
-   **Work**
+
+   **Work:**
    ![Work Session](ss/work%20session.jpeg)
-   **Break**
+   **Break:**
    ![Break Session](ss/break%20session.jpeg)
 
 2. **Session Completion Tracking**: Displays the  number of completed work and break sessions.
    
-   **Work**
+   **Work:**
    ![Work Completed](ss/work%20completed.jpeg)
-   **Break**
+   **Break:**
    ![Break Completed](ss/break%20completed.jpeg)
 
 3. **Session History**: Allows users to view the start and end times of past work and break sessions.
    
-   **Work**
+   **Work:**
    ![Session History](ss/work%20history.jpeg)
-   **Break**
+   **Break:**
    ![Session History](ss/break%20history.jpeg)
 
 ## How to Use
