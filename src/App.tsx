@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 const PomodoroTimer = () => {
-  const [timeLeft, setTimeLeft] = useState(600); // Initial time: 10 minutes (in seconds)
+  const [timeLeft, setTimeLeft] = useState(600); 
   const [isRunning, setIsRunning] = useState(false);
   const [workSessionCount, setWorkSessionCount] = useState(0);
   const [breakSessionCount, setBreakSessionCount] = useState(0);
@@ -38,12 +38,11 @@ const PomodoroTimer = () => {
     }
 
     return () => {
-      clearInterval(timer); // Clean up the interval when the component unmounts
+      clearInterval(timer); 
     };
   }, [isRunning, timeLeft, isWorkSession]);
 
   useEffect(() => {
-    // Clear local storage when the component mounts
     localStorage.removeItem("workSessionStartTime");
     localStorage.removeItem("workSessionEndTime");
     localStorage.removeItem("breakSessionStartTime");
@@ -73,7 +72,6 @@ const PomodoroTimer = () => {
 
   const resetTimer = () => {
     setIsRunning(false);
-    // Reset to 10 minutes for work session and 5 minutes for break session
     setTimeLeft(isWorkSession ? 600 : 300);
     setTimerFinished(false);
   };
@@ -133,12 +131,12 @@ const PomodoroTimer = () => {
           <circle
             cx="100"
             cy="100"
-            r="90" // Increase the radius to 90
+            r="90" 
             fill="none"
             stroke="#ffffff"
             strokeWidth="10"
-            strokeDasharray="565.48" // Circumference of the circle
-            strokeDashoffset={565.48 - (565.48 * (300 - timeLeft)) / 300} // Update the calculation for the offset
+            strokeDasharray="565.48" 
+            strokeDashoffset={565.48 - (565.48 * (300 - timeLeft)) / 300} 
             strokeLinecap="round"
             transform="rotate(-90 100 100)"
           />
